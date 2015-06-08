@@ -65,7 +65,7 @@
         };
     }
 
-    if (!!module) {
+    if (!!module && !!(module.exports)) {
         module.exports = {
             test: test,
             exec: exec
