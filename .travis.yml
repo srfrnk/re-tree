@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - "7.6"
+- '7.6'
 deploy:
   provider: npm
   email: srfrnk@gmail.com
-  api_key: $NPM_TOKEN    
+  api_key:
+    secure: wwlot5kYtzALJpPjBSBP2tOMgS2IVbNGJO+5uK/b/ozXJ0W29GpUmrf4nOXRz7HE8YHPq4Kp46dRIb5ekNZGfAxz6FyZEMPCND9E3wWfsZnL2LIPo0Hzulf2BeouW3zK58+++0z3USJw5wi4cnrHvOppVQ7p+gVkZvI/U7R64jWlpB5M6iPo5gDXssdO/UBv3WGMAYrmnDbU9KdY1D/Yh4MvgqVs62VgGs04K2GOfcpb++WfGC+CmF3eHSbNfP+2ijHD+7oLz4tp7sFjp8HWcs8s0XguN51XbB4q7cbs9apXEBL8kTUJm1xj1nVHUdmSIaChDHjzCVG5qHsGSdwTJfyShSNtzZrZ74JQ35c8CkVKxu3/6QB1ScwKRBxXN4h2pWZmBgEW6Vfu2OoajfqLjdWAudgQsls1H0O9ZNcRE9OM5fJew9yJHHcL/tgTqSRnDcXQWFIwANW8lNofzZ2dVchwTh1PanLMrFaS0VAQqN76r404bWU7gAXsTe+iqZIMgATMnNqKbf0tc8jXtdtHfijp1rA5Ry79f4813/W7ypZx4EYleEyL+73ejCOtB9Hsu3QTPfUWCLqMrwXz+dmKJIbpBBHPVaaJUcw4qy9S6Iz0i1We5bhQu50CgdlhZP9wC+c6H3Te2RjC5h691Ub6nygejKBues2PTM0Qtbz9RzM=
   on:
     tags: true
