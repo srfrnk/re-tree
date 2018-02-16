@@ -13,10 +13,12 @@
     "karma-jasmine": "*",
     "karma-nested-reporter": "*",
     "karma-phantomjs-launcher": "*",
+    "standard-version": "^4.3.0",
     "uglify-js": "*"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "release": "node_modules/standard-version/bin/cli.js"
   },
   "description": "JavaScript Extended regular expression engine - client side, server side and 'angular side' ready.",
   "main": "re-tree.js",
