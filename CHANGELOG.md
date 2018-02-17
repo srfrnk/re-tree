@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/srfrnk/re-tree/compare/v0.1.4...v0.1.5) (2018-02-17)
+
+
+### Bug Fixes
+
+* **CI-CD:** added npm script for publish (manual npm publish) ([33f1421](https://github.com/srfrnk/re-tree/commit/33f1421))
+* [#4](https://github.com/srfrnk/re-tree/issues/4) ([619860b](https://github.com/srfrnk/re-tree/commit/619860b))
+
+
+
 <a name="0.1.4"></a>
 ## [0.1.4](https://github.com/srfrnk/re-tree/compare/v0.1.3...v0.1.4) (2018-02-16)
 
