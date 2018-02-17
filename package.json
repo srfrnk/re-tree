@@ -14,7 +14,7 @@
     "karma-nested-reporter": "*",
     "karma-phantomjs-launcher": "*",
     "standard-version": "^4.3.0",
-    "uglify-js": "*"
+    "uglify-js": "^3.3.11"
   },
   "scripts": {
     "test": "gulp test",
