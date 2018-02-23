@@ -16,16 +16,16 @@ gulp.task('minify', function () {
 /**
  * Run test once and exit
  */
-gulp.task('test', ['test client', 'test server']);
+gulp.task('test', ['test-client', 'test-server']);
 
-gulp.task('test client', function (done) {
+gulp.task('test-client', function (done) {
     karma.start({
         configFile: __dirname + '/karma.conf.js',
         singleRun: true
     }, done);
 });
 
-gulp.task('test server', function () {
+gulp.task('test-server', function () {
     return gulp.src('test/server.js')
         .pipe(jasmine());
 });

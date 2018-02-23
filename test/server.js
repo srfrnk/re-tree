@@ -196,6 +196,25 @@ var re = {
                 expect(reTree.exec("1234d5678",[/^\d+([a-z]+)\d+$/,/^\d+a([a-z]+)\d+$/])).toEqual(/^\d+([a-z]+)\d+$/.exec("1234d5678"));
                 expect(reTree.exec("1234d5678",[/^\d+([a-z]+)\d+$/,/^\d+a([a-z]+)\d+$/])).not.toEqual(/^\d+(a[a-z]+)\d+$/.exec("1234d5678"));
             });
+
+            // Issue #5
+            it('should handle AND expressions',function(){
+                expect(reTree.exec("1234d5678",{and:[/2(.)/,/3/]})).toEqual(/2(.)/.exec("1234d5678"));
+                expect(reTree.exec("1234d5678",{and:[/2(.)/,/9/]})).toEqual(null);
+            });
+            it('should handle OR expressions',function(){
+                expect(reTree.exec("1234d5678",{or:[/2(.)/,/3/]})).toEqual(/2(.)/.exec("1234d5678"));
+                expect(reTree.exec("1234d5678",{or:[/9(.)/,/3(.)/]})).toEqual(/3(.)/.exec("1234d5678"));
+                expect(reTree.exec("1234d5678",{or:[/9(.)/,/10/]})).toEqual(null);
+            });
+            it('should handle NOT expressions',function(){
+                expect(reTree.exec("1234d5678",{not:/9/})).toEqual([]);
+                expect(reTree.exec("1234d5678",{not:/8/})).toEqual(null);
+            });
+            it('should handle complex expressions',function(){
+                expect(reTree.exec("1234d5678",{and:[{or:[/2(.)/,/3/]},{not:/9/}]})).toEqual(/2(.)/.exec("1234d5678"));
+                expect(reTree.exec("1234d5678",{and:[{or:[/2(.)/,/3/]},/9/]})).toEqual(null);
+            });
         });
     });
 })();

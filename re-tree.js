@@ -44,6 +44,22 @@
                 return (!!res) ? res : exec(string, item);
             }, null);
         }
+        else if (regex && Array.isArray(regex.and)) {
+            if(test(string,regex))
+            {
+                return exec(string,regex.and);
+            }
+            else
+            {
+                return null;
+            }
+        }
+        else if (regex && Array.isArray(regex.or)) {
+            return exec(string,regex.or);
+        }
+        else if (regex && regex.not) {
+            return !exec(string, regex.not)?[]:null;
+        }        
         else {
             return null;
         }
