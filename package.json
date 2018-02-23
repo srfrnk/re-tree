@@ -19,7 +19,7 @@
   "scripts": {
     "test": "gulp test",
     "release": "node_modules/standard-version/bin/cli.js",
-    "publish": "(git push --follow-tags origin master) && (npm publish)"
+    "publish-version": "git push --follow-tags origin master"
   },
   "description": "JavaScript Extended regular expression engine - client side, server side and 'angular side' ready.",
   "main": "re-tree.js",
