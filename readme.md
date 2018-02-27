@@ -2,6 +2,22 @@
 ##JavaScript Extended regular expression engine - client side, server side and 'angular side' ready.
 
 [![Build Status](https://travis-ci.org/srfrnk/re-tree.svg?branch=master)](https://travis-ci.org/srfrnk/re-tree)
+[![GitHub issues](https://img.shields.io/github/issues/srfrnk/re-tree.svg)](https://github.com/srfrnk/re-tree/issues)
+[![Open Source Helpers](https://www.codetriage.com/srfrnk/re-tree/badges/users.svg)](https://www.codetriage.com/srfrnk/re-tree)
+[![GitHub license](https://img.shields.io/github/license/srfrnk/re-tree.svg)](https://github.com/srfrnk/re-tree/blob/master/license.txt)
+
+[![npm](https://img.shields.io/npm/dm/re-tree.svg)](https://www.npmjs.com/package/re-tree) 
+[![npm](https://img.shields.io/npm/dt/re-tree.svg)](https://www.npmjs.com/package/re-tree)
+[![npm](https://img.shields.io/npm/v/re-tree.svg)](https://www.npmjs.com/package/re-tree)
+[![Semver](http://img.shields.io/SemVer/2.0.0.png)](http://semver.org/spec/v2.0.0.html)
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Known Vulnerabilities](https://snyk.io/package/npm/re-tree/badge.svg)](https://snyk.io/package/npm/re-tree)
+
+<!-- [![Dependency Status](https://david-dm.org/srfrnk/re-tree.svg)](https://david-dm.org/srfrnk/re-tree) -->
+<!-- [![devDependency Status](https://david-dm.org/srfrnk/re-tree/dev-status.svg)](https://david-dm.org/srfrnk/re-tree#info=devDependencies) -->
+<!-- [![Coverage Status](https://img.shields.io/codecov/c/github/srfrnk/re-tree.svg)](http://codecov.io/github/srfrnk/re-tree?branch=master) -->
+
 
 Sometimes you get to a point where your regular expressions get so complex it's a nightmare to maintain.
 Sometimes it's just easier to split these expressions into smaller - simpler - expression and use flow logic to handle the complex cases.
