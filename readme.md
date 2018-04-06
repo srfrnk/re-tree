@@ -1,5 +1,5 @@
-#re-tree
-##JavaScript Extended regular expression engine - client side, server side and 'angular side' ready.
+# re-tree
+## JavaScript Extended regular expression engine - client side, server side and 'angular side' ready.
 
 [![Build Status](https://travis-ci.org/srfrnk/re-tree.svg?branch=master)](https://travis-ci.org/srfrnk/re-tree)
 [![GitHub issues](https://img.shields.io/github/issues/srfrnk/re-tree.svg)](https://github.com/srfrnk/re-tree/issues)
